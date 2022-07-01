@@ -1,3 +1,13 @@
+How to run this script
+1-Set up a ssh connection with your virtual machine with Putty
+2-Make a directory for the data with this command "hadoop fs -mkdir data"
+3-Downloading the u.data with this command "wget http://witan.nl/hadoop/u.data" 
+4-Copy the data to your local folder with this command "hadoop fs -copyFromLocal u.data data/u.data"
+5-Make a script in nano with this command "nano script name" and then add the code to the script
+6-Run the script with python with command "python script_name data_file_path"
+
+
+
 Counting number of ratings per movie
 1.	Mapper: the first step is the mapper. The 
 function is going through the whole dataset and 
